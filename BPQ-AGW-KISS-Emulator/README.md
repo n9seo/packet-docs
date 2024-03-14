@@ -27,7 +27,7 @@ AGWLOOPTX=1
 BUFFERS=999
 IDINTERVAL=0
 
-
+; Example for Kantronics emulation over virtual serial port, or to a serial terminal as well.
 TNCPORT
  COMPORT=/home/n9seo/bpq/comport
  TYPE=KANT
@@ -123,5 +123,7 @@ PORT
 ENDPORT
 
 ; below sets up easy term for a direct terminal to call N9SEO for keyboard2keyboard.
+; Probably change the CALL here if you set N9SEO in callsign on Easy term.  I do not think it works well to have two things
+; listenong on an AGW modem port for the same call, Generally can cause problems with routing to the call properly.
 APPLICATION 1,EASY,,N9SEO
 ```
